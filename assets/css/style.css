@@ -9,6 +9,10 @@ html{
    color: white;
 }
 
+.text-align{
+   text-align: center;
+}
+
 .flex{
    display: flex;
 }
@@ -60,6 +64,10 @@ footer{
    background-color: black;
 }
 
+.section{
+   margin: 20px 0;
+}
+
 .top-sidebar{
    width: 30px;
 }
@@ -90,7 +98,6 @@ footer{
 .categories{
    width: 100%;
    margin-bottom: 50px;
-   background-color: antiquewhite;
 }
 
 .categories span{
@@ -104,10 +111,19 @@ footer{
 
 .card{
    width: calc(95%/2);
+   margin: 20px 0;
 }
 
 .card img{
    width: 100%;
+}
+
+.card h3{
+   margin: 20px 0 10px 0;
+}
+
+.profile{
+   border-radius: 50%;
 }
 
 
@@ -167,8 +183,14 @@ footer{
       display: none;
    }
 
+   .recently-played-albums, .for-you-albums, .singer{
+      display: flex;
+      justify-content: flex-start;
+   }
+
    .card{
       width: calc(95%/4);
+      margin: 20px 2px;
    }
 
    .ico{
@@ -202,8 +224,14 @@ footer{
       display: none;
    }
 
+   .recently-played-albums, .for-you-albums, .singer{
+      display: flex;
+      justify-content: flex-start;
+   }
+
    .card{
       width: calc(95%/6);
+      margin: 20px 2px;
    }
 
    .ico{
