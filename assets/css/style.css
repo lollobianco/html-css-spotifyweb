@@ -3,3 +3,33 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+.flex{
+   display: flex;
+}
+
+#app-container{
+   height: 100vh;
+   width: 100%;
+}
+
+main{
+   height: 90%;
+   width: 100%;
+   background-color: #141922;
+}
+
+footer{
+   height: 10%;
+   width: 100%;
+   background-color: #282828;
+}
+
+.sidebar{
+   position: relative;
+   background-color: black;
+}
+
+.sedebar i{
+   color: white;
+}
