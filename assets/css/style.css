@@ -30,6 +30,10 @@ html{
    justify-content: center;
 }
 
+.justify-end{
+   justify-content: flex-end;
+}
+
 .space-bet{
    justify-content: space-between;
 }
@@ -48,19 +52,38 @@ html{
 }
 
 main{
-   height: 90%;
+   height: 90vh;
    width: 100%;
    background-color: #141922;
 }
 
 footer{
-   height: 10%;
+   height: 10vh;
    width: 100%;
    background-color: #282828;
 }
 
+header{
+   width: 100%;
+   right: 0;
+   position: fixed;
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 30px;
+}
+
+.upgrade{
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 10px;
+   color: white;
+   border: 1px solid white;
+   border-radius: 25px;
+}
+
 .sidebar{
    padding: 7px 8px;
+   position: relative;
+   z-index: 2;
    background-color: black;
 }
 
@@ -90,18 +113,18 @@ footer{
 }
 
 .tracks-container{
-   padding-top: 80px;
    width: 100%;
-   overflow-y: scroll;
+   overflow-y: auto;
 }
 
 .categories{
    width: 100%;
-   margin-bottom: 50px;
+   margin: 140px 0 30px 0;
 }
 
-.categories span{
-   margin: 10px;
+.category{
+   display: inline-block;
+   margin: 10px
 }
 
 .albums{
@@ -120,6 +143,7 @@ footer{
 
 .card h3{
    margin: 20px 0 10px 0;
+   font-weight: 700;
 }
 
 .profile{
@@ -183,14 +207,14 @@ footer{
       display: none;
    }
 
-   .recently-played-albums, .for-you-albums, .singer{
+   .recently-played-albums, .for-you-albums, .best-singer{
       display: flex;
       justify-content: flex-start;
    }
 
    .card{
-      width: calc(95%/4);
-      margin: 20px 2px;
+      width: calc(90%/4);
+      margin: 20px 0 20px 10px;
    }
 
    .ico{
@@ -224,14 +248,14 @@ footer{
       display: none;
    }
 
-   .recently-played-albums, .for-you-albums, .singer{
+   .recently-played-albums, .for-you-albums, .best-singer{
       display: flex;
       justify-content: flex-start;
    }
 
    .card{
       width: calc(95%/6);
-      margin: 20px 2px;
+      margin: 20px 0 20px 5px;
    }
 
    .ico{
