@@ -4,8 +4,18 @@
    box-sizing: border-box;
 }
 
+html{
+   font-family: sans-serif;
+   color: white;
+}
+
 .flex{
    display: flex;
+}
+
+.flex-col{
+   display: flex;
+   flex-direction: column;
 }
 
 .wrap{
@@ -22,6 +32,10 @@
 
 .space-around{
    justify-content: space-around;
+}
+
+.align-center{
+   align-items: center;
 }
 
 #app-container{
@@ -42,10 +56,21 @@ footer{
 }
 
 .sidebar{
-   position: relative;
-   flex-basis: 10%;
-   padding: 5px 8px;
+   padding: 7px 8px;
    background-color: black;
+}
+
+.top-sidebar{
+   width: 30px;
+}
+
+.item{
+   margin-top: 10px;
+}
+
+.item span{
+   display: none;
+   margin-left: 10px;
 }
 
 .logo-small, .logo{
@@ -68,6 +93,10 @@ footer{
    background-color: antiquewhite;
 }
 
+.categories span{
+   margin: 10px;
+}
+
 .albums{
    width: 90%;
    margin: 0 auto;
@@ -81,14 +110,57 @@ footer{
    width: 100%;
 }
 
-@media (min-width: 601px){
+
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 700px){
    .sidebar{
-      flex-basis: 50%;
-      padding: 20px 60px 5px 20px;
+      padding: 20px 70px 20px 20px;
+   }
+
+   .top-sidebar{
+      width: 140px;
    }
 
    .logo{
       display: block;
+   }
+
+   .top-sidebar .logo{
+      margin-bottom: 30px;
+   }
+
+   .logo-small{
+      display: none;
+   }
+
+   .ico{
+      width: 20%;
+   }
+
+   .item span{
+      display: block;
+   }
+}
+
+@media (min-width: 701px) and (max-width: 1100px){
+   .sidebar{
+      padding: 20px 70px 20px 20px;
+   }
+
+   .top-sidebar{
+      width: 140px;
+   }
+
+   .logo{
+      display: block;
+   }
+
+   .top-sidebar .logo{
+      margin-bottom: 30px;
    }
 
    .logo-small{
@@ -98,4 +170,48 @@ footer{
    .card{
       width: calc(95%/4);
    }
+
+   .ico{
+      width: 20%;
+   }
+
+   .item span{
+      display: block;
+   }
+
+}
+
+@media (min-width: 1101px){
+   .sidebar{
+      padding: 20px 70px 20px 20px;
+   }
+
+   .top-sidebar{
+      width: 140px;
+   }
+
+   .logo{
+      display: block;
+   }
+
+   .top-sidebar .logo{
+      margin-bottom: 30px;
+   }
+
+   .logo-small{
+      display: none;
+   }
+
+   .card{
+      width: calc(95%/6);
+   }
+
+   .ico{
+      width: 20%;
+   }
+
+   .item span{
+      display: block;
+   }
+
 }
