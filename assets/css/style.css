@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 *{
    margin: 0;
    padding: 0;
@@ -5,7 +7,7 @@
 }
 
 html{
-   font-family: sans-serif;
+   font-family: 'Montserrat', sans-serif;
    color: white;
 }
 
@@ -135,7 +137,7 @@ header{
 
 .card{
    width: calc(95%/2);
-   margin: 20px 0;
+   margin-top: 30px;
 }
 
 .card img{
@@ -144,7 +146,11 @@ header{
 
 .card h3{
    margin: 20px 0 10px 0;
-   font-weight: 700;
+   font-weight: 600;
+}
+
+.card span{
+   font-size: 0.8rem;
 }
 
 .profile{
@@ -211,13 +217,11 @@ header{
    .recently-played-albums, .for-you-albums, .best-singer{
       display: flex;
       justify-content: flex-start;
-      align-items: center;
    }
 
    .card{
       width: calc(100%/4);
       padding: 1%;
-      /* margin: 20px 0 20px 10px; */
    }
 
    .ico{
