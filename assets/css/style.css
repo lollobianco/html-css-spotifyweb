@@ -11,6 +11,11 @@ html{
    color: white;
 }
 
+img{
+   display: block;
+   border-radius: 3px;
+}
+
 .text-align{
    text-align: center;
 }
@@ -36,6 +41,10 @@ html{
    justify-content: flex-end;
 }
 
+.justify-start{
+   justify-content: flex-start;
+}
+
 .space-bet{
    justify-content: space-between;
 }
@@ -46,6 +55,10 @@ html{
 
 .align-center{
    align-items: center;
+}
+
+.align-start{
+   align-items: flex-start;
 }
 
 #app-container{
@@ -63,6 +76,8 @@ footer{
    height: 10vh;
    width: 100%;
    background-color: #282828;
+   position: relative;
+   z-index: 3;
 }
 
 header{
@@ -90,6 +105,34 @@ header{
    background-color: black;
 }
 
+.sidebar h3{
+   margin: 20px 0 10px 0;
+}
+
+.fa-plus{
+   background-color: #999999;
+   color: white;
+   padding: 8px 10px;
+   border-radius: 3px;
+   margin-right: 8px;
+}
+
+.playlist{
+   color: #999999;
+   line-height: 2.2rem;
+}
+
+.playlists{
+   display: none;
+   /* overflow-y: auto; */
+}
+
+.line{
+   border-top: 1px solid #999999;
+   margin: 10px -58px 5px 0;
+   display: none;
+}
+
 .section{
    margin: 0 0 30px 0;
 }
@@ -101,10 +144,18 @@ header{
 .item span{
    display: none;
    margin-left: 10px;
+   color: #999999;
 }
 
 .logo-small, .ico{
    width: 30px;
+}
+
+.profile{
+   background-color: #999999;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
 }
 
 .logo{
@@ -115,7 +166,14 @@ header{
 .tracks-container{
    width: 100%;
    overflow-y: auto;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
 }
+
+.tracks-container::-webkit-scrollbar {
+   display: none;
+}
+ 
 
 .section-subtitle{
    margin:  10px;
@@ -134,7 +192,7 @@ header{
    display: inline-block;
    font-size: 0.7rem;
    margin: 20px 8px;
-   color: rgba(255, 255, 255, 0.4);
+   color: #999999
 }
 
 .albums{
@@ -160,10 +218,10 @@ header{
 .subtitle{
    font-size: 0.8rem;
    margin-bottom: 10px;
-   color: rgba(255, 255, 255, 0.4);
+   color: #999999
 }
 
-.profile{
+.profiles{
    border-radius: 50%;
 }
 
@@ -191,6 +249,20 @@ header{
       width: 25px;
    }
 
+   .playlists{
+      display: contents;
+   }
+
+   .line{
+      display: block;
+   }
+
+   .profile{
+      background-color: #999999;
+      width: 30px;
+      height: 30px;
+   }
+
    .item span{
       display: block;
       font-size: 0.9rem;
@@ -211,6 +283,14 @@ header{
       display: none;
    }
 
+   .playlists{
+      display: contents;
+   }
+
+   .line{
+      display: block;
+   }
+
    .recently-played-albums, .for-you-albums, .best-singer{
       justify-content: flex-start;
    }
@@ -222,6 +302,12 @@ header{
 
    .ico{
       width: 25px;
+   }
+
+   .profile{
+      background-color: #999999;
+      width: 30px;
+      height: 30px;
    }
 
    .item span{
@@ -253,6 +339,14 @@ header{
       display: none;
    }
 
+   .playlists{
+      display: contents;
+   }
+
+   .line{
+      display: block;
+   }
+
    .recently-played-albums, .for-you-albums, .best-singer{
       justify-content: flex-start;
    }
@@ -264,6 +358,12 @@ header{
 
    .ico{
       width: 25px;
+   }
+
+   .profile{
+      background-color: #999999;
+      width: 30px;
+      height: 30px;
    }
 
    .item span{
