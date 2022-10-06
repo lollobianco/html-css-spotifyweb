@@ -17,6 +17,7 @@ img{
    border-radius: 3px;
 }
 
+
 .text-align{
    text-align: center;
 }
@@ -239,7 +240,7 @@ header{
 }
 
 .song-container img{
-   width: 12%;
+   width: 50px;
 }
 
 .title-song{
@@ -261,16 +262,52 @@ header{
    margin-top: 3px;
 }
 
+.song-player{
+   width: 50%;
+}
+
 .player i{
    margin: 10px;
-   flex-basis: 40%;
+   flex-basis: 35%;
+   font-size: 1.1rem;
 }
 
 .timing{
-   border-top: 2px solid white;
+   border-top: 5px solid #999999;
+   border-radius: 5px;
    width: 100%;
    margin: 0 10px;
+   position: relative;
 }
+
+.white-bar{
+   border-top: 5px solid white;
+   border-radius: 5px; 
+   position: absolute;
+   z-index: 4;
+   top: -5px;
+   left: 0px;
+   right: 80%;
+}
+
+.utility i{
+   margin: 0 5px;
+}
+
+.utility .timing{
+   width: 75px;
+}
+
+
+.sidebar div :hover {
+   color: white;
+}
+
+.sidebar div :hover .ico {
+   color: white;
+}
+
+
 
 
 
