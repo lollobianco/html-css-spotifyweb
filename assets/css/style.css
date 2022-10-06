@@ -86,7 +86,7 @@ footer{
 header{
    width: 100%;
    right: 0;
-   position: fixed;
+   position: sticky;
    z-index: 1;
    background-color: rgba(0, 0, 0, 0.3);
    padding: 20px;
