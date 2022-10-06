@@ -298,6 +298,13 @@ header{
    width: 75px;
 }
 
+.category:hover{
+   text-decoration: underline 3px green;
+}
+
+span:hover{
+   color: white;
+}
 
 .sidebar div :hover {
    color: white;
@@ -305,6 +312,7 @@ header{
 
 .sidebar div :hover .ico {
    color: white;
+   width: 27px;
 }
 
 
