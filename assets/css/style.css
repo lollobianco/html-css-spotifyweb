@@ -109,7 +109,7 @@ header{
 }
 
 .sidebar{
-   padding: 7px 10px;
+   padding: 7px 10px 35px 10px;
    position: relative;
    height: 100%;
    z-index: 2;
@@ -169,7 +169,6 @@ header{
    border-radius: 50%;
    width: 30px;
    height: 30px;
-   margin-bottom: 10px;
 }
 
 .logo{
@@ -263,13 +262,23 @@ header{
 }
 
 .song-player{
-   width: 50%;
+   width: 100%;
+   padding-left: 30px;
 }
 
 .player i{
-   margin: 10px;
-   flex-basis: 35%;
+   margin: 5px 10px;
+   font-size: 0.9rem;
+}
+
+.player .fa-circle-play{
    font-size: 1.1rem;
+   padding-bottom: 5px;
+}
+
+.seconds{
+   font-size: 0.8rem;
+   color: #999999;
 }
 
 .timing{
@@ -315,14 +324,31 @@ span:hover{
    width: 27px;
 }
 
+.utility{
+   display: none;
+}
 
 
+@media (min-width: 1px) and (max-width: 320px){
+   .song-player{
+      padding-left: 10px;
+   }
+
+   .player i{
+      margin: 0px 10px;
+      font-size: 0.7rem;
+   }
+   
+   .player .fa-circle-play{
+      font-size: 0.9rem;
+   }
+}
 
 
 
 @media (min-width: 601px) and (max-width: 700px){
    .sidebar{
-      padding: 20px 77px 20px 20px;
+      padding: 20px 77px 35px 20px;
    }
 
    .logo{
@@ -356,11 +382,25 @@ span:hover{
       display: block;
       font-size: 0.9rem;
    }
+
+   .utility{
+      display: none;
+   }
+
+   .player i{
+      margin: 5px 20px;
+      flex-basis: 35%;
+      font-size: 1.1rem;
+   }
+   
+   .player .fa-circle-play{
+      font-size: 1.8rem;
+   }
 }
 
 @media (min-width: 701px) and (max-width: 1100px){
    .sidebar{
-      padding: 20px 77px 20px 20px;
+      padding: 20px 77px 35px 20px;
    }
 
    .logo{
@@ -412,11 +452,29 @@ span:hover{
       margin-left: 10px;
    }
 
+   .utility{
+      display: flex;
+   }
+
+   .song-player{
+      width: 50%;
+   }
+
+   .player i{
+      margin: 5px 20px;
+      flex-basis: 35%;
+      font-size: 1.1rem;
+   }
+   
+   .player .fa-circle-play{
+      font-size: 1.8rem;
+   }
+
 }
 
 @media (min-width: 1101px){
    .sidebar{
-      padding: 20px 77px 20px 20px;
+      padding: 20px 77px 35px 20px;
    }
 
    .logo{
@@ -466,6 +524,24 @@ span:hover{
 
    .section-subtitle{
       margin-left: 15px;
+   }
+
+   .utility{
+      display: flex;
+   }
+
+   .song-player{
+      width: 50%;
+   }
+
+   .player i{
+      margin: 5px 20px;
+      flex-basis: 35%;
+      font-size: 1.1rem;
+   }
+   
+   .player .fa-circle-play{
+      font-size: 1.8rem;
    }
 
 }
