@@ -19,7 +19,7 @@ html{
 
 img{
    display: block;
-   border-radius: 3px;
+   border-radius: 5px;
 }
 
 
@@ -410,11 +410,11 @@ header{
    display: none;
 }
 
-.white-bar:hover{
+.timing:hover .white-bar{
    border-color: #1ED760;
 }
 
-.white-bar:hover .dot{
+.timing:hover .dot{
    display: block;
 }
 
