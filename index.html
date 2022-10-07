@@ -19,9 +19,12 @@
 
             <div class="top-sidebar flex-col">
 
-               <img class="logo-small" src="./assets/img/logo-small.svg" alt="logo">
+               <a href="https://open.spotify.com/">
+                  <img class="logo-small" src="./assets/img/logo-small.svg" alt="logo">
 
-               <img class="logo" src="./assets/img/logo.svg" alt="logo">
+                  <img class="logo" src="./assets/img/logo.svg" alt="logo">  
+               </a>
+               
 
                <div class="flex align-center item">
                   <img class="ico" src="./assets/img/home.svg" alt="home">
@@ -56,9 +59,9 @@
 
             <div class="bottom-sidebar flex-col">
 
-               <div class="flex align-center justify-start item">
+               <div class="flex align-center item">
                   <img class="ico" src="./assets/img/download.svg" alt="download">
-                  <span>Installa App</span>
+                  <span><a href="https://www.spotify.com/it/download/windows/">Installa App</a></span>
                </div>
 
                <div class="line"></div>
@@ -78,16 +81,16 @@
          <div class="tracks-container">
 
             <header class="flex align-center justify-end">
-               <button class="upgrade">EFFETTUA L'UPGRADE</button>
+               <a href="https://www.spotify.com/it/premium/?utm_source=app&utm_medium=desktop&utm_campaign=upgrade"><button class="upgrade">EFFETTUA L'UPGRADE</button></a>
             </header>
 
             <div class="categories text-align">
-               <span class="category">IN EVIDENZA</span>
-               <span class="category">PODCAST</span>
-               <span class="category">CLASSIFIHE</span>
-               <span class="category">GENERI E MOOD</span>
-               <span class="category">NUOVE USCITE</span>
-               <span class="category">SCOPRI</span>
+               <span class="category best flex-col">IN EVIDENZA <div class="green-line"></div></span>
+               <span class="category flex-col">PODCAST <div class="green-lines"></div></span>
+               <span class="category flex-col">CLASSIFIHE <div class="green-lines"></div></span>
+               <span class="category flex-col">GENERI E MOOD <div class="green-lines"></div></span>
+               <span class="category flex-col">NUOVE USCITE <div class="green-lines"></div></span>
+               <span class="category flex-col">SCOPRI <div class="green-lines"></div></span>
             </div>
 
             <div class="albums">
@@ -95,40 +98,77 @@
                <h2 class="recently-played">Recently played</h2>
 
                <div class="section recently-played-albums flex wrap space-bet">
-
                   <div class="card flex-col align-center">
-                     <img src="./assets/img/metal_lifting.jpg" alt="album-1">
-                     <h3 class="text-align">Heavy Metal</h3>
-                     <span class="text-align subtitle">Subtitle</span>
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/playlist/27gN69ebwiJRtXEboL12Ih">
+                           <img  class="album-img" src="./assets/img/metal_lifting.jpg" alt="album-1">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i> 
+                        </a>
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/playlist/27gN69ebwiJRtXEboL12Ih">Heavy Metal</a></h3>
+                     <span class="text-align subtitle">Metal</span>
                   </div>
                      
                   <div class="card flex-col align-center">
-                     <img src="./assets/img/stranger.jpeg" alt="album-2">
-                     <h3 class="text-align">Stranger Things, Vol.1 (a Netflix Original Series Soundtrak)</h3>
+                     
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DXc3KPAjGyPdm">
+                           <img  class="album-img" src="./assets/img/stranger.jpeg" alt="album-2">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i> 
+                        </a>
+                          
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/playlist/37i9dQZF1DXc3KPAjGyPdm">Stranger Things, Vol.1 (a Netflix Original Series Soundtrak)</a> </h3>
                      <span class="text-align subtitle">Kyle Dixon & Michael Stein</span>
                   </div>
 
+                  <div class="card flex-col align-center">                    
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/album/5KZZX0t7FVzTyxQLcY7ft0">
+                           <img  class="album-img" src="./assets/img/aquietplace.jpeg" alt="album-3">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i>  
+                        </a>
+                          
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/album/5KZZX0t7FVzTyxQLcY7ft0">A quiet place</a></h3>
+                     <span class="text-align subtitle">Marco Beltrami</span>
+                  </div>
+
                   <div class="card flex-col align-center">
-                     <img src="./assets/img/aquietplace.jpeg" alt="album-3">
-                     <h3 class="text-align">A quiet place</h3>
+                     
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/album/30R0z87H0K9Qpcvd4PZBEn">
+                           <img  class="album-img" src="./assets/img/split.jpeg" alt="album-4">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i> 
+                        </a>
+                         
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/album/30R0z87H0K9Qpcvd4PZBEn">Split</a></h3>
+                     <span class="text-align subtitle">West Thordson</span>
+                  </div>
+
+                  <div class="card flex-col align-center">
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/album/1JpTP5zaoj0ud6lLu3gqZ0">
+                           <img  class="album-img" src="./assets/img/cure.jpeg" alt="album-5">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i> 
+                        </a>
+                         
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/album/1JpTP5zaoj0ud6lLu3gqZ0">A cure for wellness</a></h3>
                      <span class="text-align subtitle">Subtitle</span>
                   </div>
 
                   <div class="card flex-col align-center">
-                     <img src="./assets/img/split.jpeg" alt="album-4">
-                     <h3 class="text-align">Split</h3>
-                     <span class="text-align subtitle">Subtitle</span>
-                  </div>
-
-                  <div class="card flex-col align-center">
-                     <img src="./assets/img/cure.jpeg" alt="album-5">
-                     <h3 class="text-align">A cure for wellness</h3>
-                     <span class="text-align subtitle">Subtitle</span>
-                  </div>
-
-                  <div class="card flex-col align-center">
-                     <img src="./assets/img/sinister.jpeg" alt="album-6">
-                     <h3 class="text-align">Sinister</h3>
+                     
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/album/4isNDcdh05jGd91v2h6tbC">
+                           <img  class="album-img" src="./assets/img/sinister.jpeg" alt="album-6">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i>
+                        </a>
+                          
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/album/4isNDcdh05jGd91v2h6tbC">Sinister</a></h3>
                      <span class="text-align subtitle">Subtitle</span>
                   </div>
 
@@ -141,12 +181,20 @@
                <div class="section for-you-albums flex wrap space-bet">
 
                   <div class="card flex-col align-center">
-                     <img src="./assets/img/radar.jpeg" alt="album-7">
+                     
+                     <div class="play-hover">
+                        <img  class="album-img" src="./assets/img/radar.jpeg" alt="album-7">
+                        <i class="fa-regular fa-circle-play fa-circle-play-hover"></i>  
+                     </div>
                      <h3 class="text-align">Release Radar</h3>
                   </div>
                      
                   <div class="card flex-col align-center">
-                     <img src="./assets/img/mixdaily.jpeg" alt="album-8">
+                     
+                     <div class="play-hover">
+                        <img  class="album-img" src="./assets/img/mixdaily.jpeg" alt="album-8">
+                        <i class="fa-regular fa-circle-play fa-circle-play-hover"></i>  
+                     </div>
                      <h3 class="text-align">Daily Mix 1</h3>
                   </div>
 
@@ -159,13 +207,27 @@
                <div class="section best-singer flex wrap space-bet">
 
                   <div class="card flex-col align-center">
-                     <img class="profiles" src="./assets/img/youg.jpeg" alt="album-7">
-                     <h3 class="text-align">Lana del Rey</h3>
+                     
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa">
+                           <img class="profiles album-img" src="./assets/img/youg.jpeg" alt="album-9">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i>  
+                        </a>
+                        
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa">Lana del Rey</a></h3>
                   </div>
                      
                   <div class="card flex-col align-center">
-                     <img class="profiles" src="./assets/img/einaudi.jpeg" alt="album-8">
-                     <h3 class="text-align">Ludovico Einaudi</h3> 
+                     
+                     <div class="play-hover">
+                        <a href="https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj">
+                           <img class="profiles album-img" src="./assets/img/einaudi.jpeg" alt="album-10">
+                           <i class="fa-regular fa-circle-play fa-circle-play-hover"></i> 
+                        </a>
+                          
+                     </div>
+                     <h3 class="text-align"><a href="https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj">Ludovico Einaudi</a></h3> 
                   </div>
 
                </div>
@@ -181,7 +243,7 @@
       
       <footer class="flex space-bet align-center">
 
-            <div class="song-container flex">
+            <div class="song-container flex align-center">
 
                <img src="./assets/img/sinister.jpeg" alt="song">
 
@@ -218,7 +280,9 @@
                   <div><span class="seconds">0:25</span></div>
 
                   <div class="timing">
-                     <div class="white-bar"></div>
+                     <div class="white-bar">
+                        <div class="dot"></div>
+                     </div>
                   </div>
 
                   <div><span class="seconds">4:35</span></div>
@@ -231,7 +295,7 @@
 
                <div><i class="fa-solid fa-list"></i></div>
                <div><i class="fa-solid fa-tv"></i></div>
-               <div class="flex align-center"><i class="fa-solid fa-volume-high"></i><div class="timing"><div class="white-bar"></div></div></div>
+               <div class="flex align-center"><i class="fa-solid fa-volume-high"></i><div class="timing"><div class="white-bar"><div class="dot"></div></div></div></div>
 
                
 

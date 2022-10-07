@@ -6,6 +6,11 @@
    box-sizing: border-box;
 }
 
+a{
+   text-decoration: none;
+   color: unset;
+}
+
 html{
    font-family: 'Montserrat', sans-serif;
    color: white;
@@ -91,6 +96,7 @@ footer{
 
 header{
    width: 100%;
+   height: 75px;
    right: 0;
    top: 0;
    position: sticky;
@@ -106,6 +112,15 @@ header{
    border: 1px solid white;
    border-radius: 25px;
    font-size: 0.7rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.upgrade:hover{
+   padding: 13px 30px;
+   background-color: rgba(30, 215, 96, 1);
+   border: 1px solid black;
+   color: black;
 }
 
 .sidebar{
@@ -119,8 +134,8 @@ header{
    overflow-x: hidden;
 }
 
-.sidebar h3{
-   margin: 20px 0 10px 0;
+.playlists h3{
+   margin: 30px 0 15px 0;
 }
 
 .fa-plus{
@@ -129,15 +144,23 @@ header{
    padding: 8px 10px;
    border-radius: 3px;
    margin-right: 8px;
+   margin-bottom: 10px;
+}
+
+.playlist:hover .fa-plus{
+   background-color: white;
+   color: #999999;
 }
 
 .playlist{
    color: #999999;
-   line-height: 2.2rem;
+   line-height: 1.8rem;
+   cursor: pointer;
 }
 
 .playlists{
    display: none;
+   font-size: 0.9rem;
 }
 
 .line{
@@ -196,16 +219,40 @@ header{
    color: rgba(255, 255, 255, 0.4);
 }
 
-.categories{
-   width: 100%;
-   margin: 0 0 30px 0;
+.tracks-container h2{
+   margin-top: 20px;
 }
 
 .category{
    display: inline-block;
-   font-size: 0.7rem;
-   margin: 20px 8px;
-   color: #999999
+   font-size: 0.8rem;
+   font-weight: 600;
+   margin: 15px 6px 5px 6px;
+   color: #999999;
+   cursor: pointer;
+}
+
+.category:hover{
+   color: white;
+}
+
+.green-line, .green-lines{
+   border-top: 2px solid #1ED760;
+   border-radius: 2px;
+   width: 70%;
+   margin: 0 auto;
+}
+
+.green-lines{
+   display: none;
+}
+
+.best{
+   color: white;
+}
+
+.category:hover .green-lines{
+   display: block;
 }
 
 .albums{
@@ -226,12 +273,41 @@ header{
    margin: 20px 0 10px 0;
    font-weight: 600;
    font-size: 1.1rem;
+   cursor: pointer;
+}
+
+.fa-circle-play-hover{
+   font-size: 3.5rem;
+   position: absolute;
+   top: 50%; 
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: none;
+}
+
+.play-hover{
+   position: relative;
+   cursor: pointer;
+}
+
+.play-hover:hover img{
+   filter: opacity(0.4);
+   box-shadow: 6px 6px 15px 10px rgba(0,0,0,0.88);
+}
+
+.play-hover:hover .fa-circle-play-hover{
+   display: block;
 }
 
 .subtitle{
    font-size: 0.8rem;
    margin-bottom: 10px;
-   color: #999999
+   color: #999999;
+   cursor: pointer;
+}
+
+.subtitle:hover{
+   color: white;
 }
 
 .profiles{
@@ -246,6 +322,11 @@ header{
    font-size: 0.7rem;
    margin: 0 7px;
    color: #999999;
+   cursor: pointer;
+}
+
+.title-song:hover{
+   color: white;
 }
 
 .artist{
@@ -253,12 +334,22 @@ header{
    margin: 3px 7px;
    color: white;
    font-weight: 600;
+   cursor: pointer;
 }
 
 .fa-heart, .fa-folder{
    color: #999999;
    font-size: 0.8rem;
    margin-top: 3px;
+   cursor: pointer;
+}
+
+.fa-heart:hover{
+   color:rgb(30, 215, 96);
+}
+
+.fa-folder:hover{
+   color: white;
 }
 
 .song-player{
@@ -269,11 +360,18 @@ header{
 .player i{
    margin: 5px 10px;
    font-size: 0.9rem;
+   cursor: pointer;
+   color: #999999;
+}
+
+.player i:hover{
+   color: white;
 }
 
 .player .fa-circle-play{
    font-size: 1.1rem;
    padding-bottom: 5px;
+   color: white;
 }
 
 .seconds{
@@ -287,11 +385,13 @@ header{
    width: 100%;
    margin: 0 10px;
    position: relative;
+   cursor: pointer;
 }
 
 .white-bar{
    border-top: 5px solid white;
    border-radius: 5px; 
+   position: relative;
    position: absolute;
    z-index: 4;
    top: -5px;
@@ -299,29 +399,42 @@ header{
    right: 80%;
 }
 
+.dot{
+   position: absolute;
+   height: 12px;
+   width: 12px;
+   top: -9px;
+   right: 0;
+   background-color: white;
+   border-radius: 50%;
+   display: none;
+}
+
+.white-bar:hover{
+   border-color: #1ED760;
+}
+
+.white-bar:hover .dot{
+   display: block;
+}
+
 .utility i{
    margin: 0 5px;
+   cursor: pointer;
+   color: #999999;
+}
+
+.utility i:hover{
+   color: white;
 }
 
 .utility .timing{
    width: 75px;
 }
 
-.category:hover{
-   text-decoration: underline 3px green;
-}
-
-span:hover{
-   color: white;
-}
-
 .sidebar div :hover {
    color: white;
-}
-
-.sidebar div :hover .ico {
-   color: white;
-   width: 27px;
+   cursor: pointer;
 }
 
 .utility{
@@ -341,6 +454,15 @@ span:hover{
    
    .player .fa-circle-play{
       font-size: 0.9rem;
+   }
+
+   .song-container img{
+      width: 40px;
+      height: 40px;
+   }
+
+   .category{
+      font-size: 0.7rem;
    }
 }
 
